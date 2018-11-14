@@ -13,8 +13,14 @@ class BaseTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .red
         tabBar.isTranslucent = false
+        view.backgroundColor = .white
+        
+        let mineVC = MineViewController()
+        addChildViewController(mineVC,
+                               title: "我的",
+                               image: UIImage(named: "tab_mine"),
+                               selectedImage: UIImage(named: "tab_mine_S"))
         
         let viewController = UIViewController()
         addChildViewController(viewController,
@@ -34,11 +40,7 @@ class BaseTabBarController: UITabBarController {
                                image: UIImage(named: "tab_book"),
                                selectedImage: UIImage(named: "tab_book_S"))
         
-        let mineVC = MineViewController()
-        addChildViewController(mineVC,
-                               title: "我的",
-                               image: UIImage(named: "tab_mine"),
-                               selectedImage: UIImage(named: "tab_mine_S"))
+        
     }
     
     func addChildViewController(_ childController: UIViewController, title:String?, image:UIImage? ,selectedImage:UIImage?) {

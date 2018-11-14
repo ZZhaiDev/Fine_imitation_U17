@@ -16,6 +16,11 @@
 		382DBAA5219BAB99001BA1AD /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382DBAA4219BAB99001BA1AD /* BaseTabBarController.swift */; };
 		382DBAAD219BAD7F001BA1AD /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382DBAAC219BAD7F001BA1AD /* MineViewController.swift */; };
 		382DBAAF219BAE19001BA1AD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382DBAAE219BAE19001BA1AD /* BaseViewController.swift */; };
+		382DBAB1219BB8EB001BA1AD /* MineHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382DBAB0219BB8EB001BA1AD /* MineHead.swift */; };
+		382DBAB3219BBD4B001BA1AD /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382DBAB2219BBD4B001BA1AD /* SettingViewController.swift */; };
+		382DBABB219BC394001BA1AD /* ParallaxHeaderMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382DBAB8219BC394001BA1AD /* ParallaxHeaderMode.swift */; };
+		382DBABC219BC394001BA1AD /* UIScrollView+ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382DBAB9219BC394001BA1AD /* UIScrollView+ParallaxHeader.swift */; };
+		382DBABD219BC394001BA1AD /* ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382DBABA219BC394001BA1AD /* ParallaxHeader.swift */; };
 		8F67248E4781EA746C76D39B /* Pods_Fine_imitation_U17Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2749AA010EB7463A5039A9BE /* Pods_Fine_imitation_U17Tests.framework */; };
 		9CD83CF3A8139F645E25E3EE /* Pods_Fine_imitation_U17UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B20928ECE53213D466AB160 /* Pods_Fine_imitation_U17UITests.framework */; };
 		ED0184317F915EB2EC238BED /* Pods_Fine_imitation_U17.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883898E39E930B82A100795C /* Pods_Fine_imitation_U17.framework */; };
@@ -57,6 +62,11 @@
 		382DBAA4219BAB99001BA1AD /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		382DBAAC219BAD7F001BA1AD /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		382DBAAE219BAE19001BA1AD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		382DBAB0219BB8EB001BA1AD /* MineHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHead.swift; sourceTree = "<group>"; };
+		382DBAB2219BBD4B001BA1AD /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		382DBAB8219BC394001BA1AD /* ParallaxHeaderMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderMode.swift; sourceTree = "<group>"; };
+		382DBAB9219BC394001BA1AD /* UIScrollView+ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ParallaxHeader.swift"; sourceTree = "<group>"; };
+		382DBABA219BC394001BA1AD /* ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeader.swift; sourceTree = "<group>"; };
 		3B20928ECE53213D466AB160 /* Pods_Fine_imitation_U17UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fine_imitation_U17UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		883898E39E930B82A100795C /* Pods_Fine_imitation_U17.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fine_imitation_U17.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94745523327F098E8A20AAC0 /* Pods-Fine_imitation_U17Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fine_imitation_U17Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fine_imitation_U17Tests/Pods-Fine_imitation_U17Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +128,7 @@
 		382DBA75219BAB2D001BA1AD /* Fine_imitation_U17 */ = {
 			isa = PBXGroup;
 			children = (
+				382DBAB4219BC0BF001BA1AD /* Component */,
 				382DBAA9219BAD5D001BA1AD /* Base */,
 				382DBAA6219BAD47001BA1AD /* Mine */,
 				382DBA76219BAB2D001BA1AD /* AppDelegate.swift */,
@@ -160,6 +171,7 @@
 		382DBAA7219BAD4E001BA1AD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				382DBAB0219BB8EB001BA1AD /* MineHead.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				382DBAAC219BAD7F001BA1AD /* MineViewController.swift */,
+				382DBAB2219BBD4B001BA1AD /* SettingViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -194,6 +207,24 @@
 				382DBAAE219BAE19001BA1AD /* BaseViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		382DBAB4219BC0BF001BA1AD /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				382DBAB7219BC394001BA1AD /* ParallaxHeader */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		382DBAB7219BC394001BA1AD /* ParallaxHeader */ = {
+			isa = PBXGroup;
+			children = (
+				382DBAB8219BC394001BA1AD /* ParallaxHeaderMode.swift */,
+				382DBAB9219BC394001BA1AD /* UIScrollView+ParallaxHeader.swift */,
+				382DBABA219BC394001BA1AD /* ParallaxHeader.swift */,
+			);
+			path = ParallaxHeader;
 			sourceTree = "<group>";
 		};
 		51596CFFC65F86EB5BB8FFBA /* Pods */ = {
@@ -472,9 +503,14 @@
 			files = (
 				382DBAAF219BAE19001BA1AD /* BaseViewController.swift in Sources */,
 				382DBA79219BAB2D001BA1AD /* ViewController.swift in Sources */,
+				382DBAB1219BB8EB001BA1AD /* MineHead.swift in Sources */,
+				382DBABC219BC394001BA1AD /* UIScrollView+ParallaxHeader.swift in Sources */,
 				382DBA77219BAB2D001BA1AD /* AppDelegate.swift in Sources */,
 				382DBAA5219BAB99001BA1AD /* BaseTabBarController.swift in Sources */,
+				382DBAB3219BBD4B001BA1AD /* SettingViewController.swift in Sources */,
+				382DBABB219BC394001BA1AD /* ParallaxHeaderMode.swift in Sources */,
 				382DBAAD219BAD7F001BA1AD /* MineViewController.swift in Sources */,
+				382DBABD219BC394001BA1AD /* ParallaxHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
